@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html data-ng-app="my-car">
+    <head>
+        <title>
+            My Car
+        </title>
+
+        <base href="/" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <link rel="icon"                             href="/assets/images/icons/logo_car-garage.ico" />
+        <link rel="apple-touch-icon"                 href="/assets/images/touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="76x76"   href="/assets/images/touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/touch-icon-iphone-retina.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/touch-icon-ipad-retina.png" />
+
+        <!-- build:css /assets/vendor.css -->
+        <link rel="stylesheet" href="/bower_components/reset-css/reset.css" />
+        <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+        <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="/bower_components/ng-dialog/css/ngDialog.css" />
+        <!-- endbuild -->
+
+        <link rel="stylesheet" href="/assets/site.css">
+    </head>
+
+    <body>
+    
+        <loader></loader>
+
+        <content>
+            
+            <navbar></navbar>
+
+            <main data-ng-view></main>
+
+            <footer></footer>
+
+        </content>
+
+        <!-- build:js /scripts/vendor.js -->
+        <script src="/bower_components/angular/angular.js"></script>
+        <script src="/bower_components/angular-route/angular-route.js"></script>
+        <script src="/bower_components/angular-animate/angular-animate.js"></script>
+        <script src="/bower_components/angular-scroll/angular-scroll.js"></script>
+        <script src="/bower_components/angular-ui-mask/dist/mask.js"></script>
+        <script src="/bower_components/ng-dialog/js/ngDialog.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js /scripts/scripts.js -->
+        <script src="/scripts/app.js"></script>
+        <script src="/scripts/run.js"></script>
+        <script src="/scripts/views.js"></script>
+        
+        <script src="/scripts/constants/urls-constant.js"></script>
+        
+        <script src="/scripts/services/route-change-service.js"></script>
+        <script src="/scripts/services/flow-service.js"></script>
+        <script src="/scripts/services/loader-service.js"></script>
+        <script src="/scripts/services/scroll-service.js"></script>
+        <script src="/scripts/services/brands-service.js"></script>
+        
+        <script src="/scripts/controllers/404-controller.js"></script>
+        <script src="/scripts/controllers/home-controller.js"></script>
+        
+        <script src="/scripts/directives/loader-directive.js"></script>
+        <script src="/scripts/directives/navbar-directive.js"></script>
+        
+        <script src="/scripts/filters/unsafe-filter.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

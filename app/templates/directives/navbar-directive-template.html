@@ -1,0 +1,47 @@
+<nav class="navbar navbar--fixed-top navbar--inverted">
+
+    <container>
+
+        <div class="navbar-nav">
+
+            <a class="navbar-brand"
+               data-ng-click="goTo('/')"
+               title="Start">
+                <i class="fa fa-fw fa-car"></i>
+                Car
+            </a>
+
+            <ul class="navbar-menu list">
+                <li class="list-item">
+                    <a class="list-item-link"
+                       data-ng-click="goTo('/help')">
+                       <i class="fa fa-fw fa-question-circle-o"></i>
+                        Help
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a class="button"
+                       data-ng-click="goTo('/my/login')">
+                       <i class="fa fa-fw fa-sign-in"></i>
+                        Login
+                    </a>
+                </li>
+                <li class="list-border"></li>
+                <li class="list-item">
+                    <a class="button"
+                       data-ng-click="goTo('/my/register')">
+                       <i class="fa fa-fw fa-user-plus"></i>
+                        Register
+                    </a>
+                </li>
+            </ul>
+
+            <button class="navbar-menu-toggle right">
+                <i class="fa fa-fw fa-bars"></i>
+            </button>
+
+        </div>
+
+    </container>
+
+</nav>

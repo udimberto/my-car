@@ -1,0 +1,42 @@
+{
+  "name": "my-car",
+  "version": "1.0.0",
+  "description": "WebApp Project",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "concurrent-transform": "^1.0.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-ng-template": "^0.2.3",
+    "gulp-prompt": "^0.2.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-usemin": "^0.3.23",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "readline-sync": "^1.4.4",
+    "require-dir": "^0.3.0",
+    "wiredep": "^4.0.0",
+    "yargs": "^4.8.1"
+  },
+  "engines": {
+    "node": ">=4.4.7"
+  },
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@jSilverize"
+}

@@ -1,0 +1,33 @@
+<header class="header bg-light-blue">
+	<container>
+		<h1 class="title">
+			My Car
+		</h1>
+	</container>
+</header>
+
+<section class="section">
+	<container>
+		<h2>
+			Test
+		</h2>
+
+		<br />
+
+		<form>
+			<div class="form-field">
+				<select class=""
+					    data-ng-model="car.brand"
+					    data-ng-options="brand as brand.Descricao for brand in carBrands track by brand.Descricao">
+				</select>
+			</div>
+		</form>
+
+		<br />
+
+		<button class="button orange"
+				data-ng-click="otherPage()">
+			404
+		</button>
+	</container>
+</section>

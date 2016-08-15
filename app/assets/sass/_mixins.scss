@@ -1,0 +1,76 @@
+// Border Box
+@mixin border-box () {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+// Border Radius
+@mixin border-radius ($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius   : $radius;
+    -ms-border-radius    : $radius;
+    border-radius        : $radius;
+}
+
+// Box Shadow
+@mixin box-shadow ($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow   : $shadow;
+    -ms-box-shadow    : $shadow;
+    box-shadow        : $shadow;
+}
+
+// Text Shadow
+@mixin text-shadow($shadow) {
+    -webkit-text-shadow: $shadow;
+    -moz-text-shadow   : $shadow;
+    -ms-text-shadow    : $shadow;
+    text-shadow        : $shadow;
+}
+
+// Transition
+@mixin transition ($time: .25s) {
+    -o-transition     : $time;
+    -moz-transition   : $time;
+    -webkit-transition: $time;
+    transition        : $time;
+}
+
+// Animation
+@mixin animation ($name, $time, $loop) {
+    -o-animation     : #{$name} $time #{$loop};
+    -moz-animation   : #{$name} $time #{$loop};
+    -webkit-animation: #{$name} $time #{$loop};
+    animation        : #{$name} $time #{$loop};
+}
+
+// User no select
+@mixin no-select() {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+// Blur Filter
+@mixin blur ($intensity: 2px) {
+    -webkit-filter: blur($intensity);
+    filter        : blur($intensity);
+}
+
+// Keyframe
+@mixin keyframe ($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-o-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}

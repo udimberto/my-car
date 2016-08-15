@@ -1,0 +1,17 @@
+// Paths
+
+// Use: "#{map-get($path, $key)}";
+$path-assets: (
+    fonts : "/assets/fonts",
+    icons : "/assets/icons",
+    images: "/assets/images",
+);
+
+
+// Components
+
+// Container
+$container-padding: 20px;
+
+// Navbar
+$navbar-min-height: 60px;

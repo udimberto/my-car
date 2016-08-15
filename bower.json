@@ -1,0 +1,28 @@
+{
+  "name": "my-car",
+  "description": "WebApp Project",
+  "authors": [
+    "@jSilverize"
+  ],
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-ui-utils": "^3.0.0",
+    "angular-animate": "^1.5.8",
+    "angular-scroll": "^1.0.0",
+    "angular-hotkeys": "^0.2.2",
+    "animate.css": "^3.5.2",
+    "ng-dialog": "^0.6.2",
+    "reset-css": "^2.0.2011012603",
+    "font-awesome": "fontawesome#^4.6.3"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

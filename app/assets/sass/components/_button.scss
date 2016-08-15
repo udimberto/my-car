@@ -1,0 +1,100 @@
+/* Button
+-------------------------------------------------------------------------- */
+$this          : ".button";
+$button-primary: $color-grey;
+
+#{$this} {
+    position        : relative;
+    display         : inline-block;
+    cursor          : pointer;
+
+    margin          : 0;
+    padding         : 11px 15px 9px;
+    
+    min-height      : 40px;
+
+    line-height     : 1.25;
+
+    text-align      : center;
+    text-decoration : none;
+    border          : 0;
+    @include          border-radius(3px);
+
+    background-image: none;
+    background-color: $button-primary;
+    color           : $color-white;
+    border-bottom   : 3px solid rgba($color-black, .15);
+    @include          text-shadow(0 1px rgba($color-black, .15));
+    @include          transition();
+
+    &:hover:not(:disabled) {
+        background-color: lighten($button-primary, 3%);
+    }
+
+    &:active {
+        padding-top   : 12px;
+        padding-bottom: 9px;
+        border-bottom : 1px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        outline         : 0;
+        background-image: none;
+    }
+
+    &:disabled {
+        color              : darken($color-light-grey, 15%);
+        @include             text-shadow(0 1px $color-white-smoke);
+        background-color   : $color-light-grey;
+        border-bottom-color: lighten($color-grey, 5%);
+        cursor             : default;
+    }
+
+    &.softed {
+        background-color   : lighten($color-blue, 50%);
+        color              : $color-blue;
+        border-bottom-color: lighten($color-blue, 40%);
+        @include             text-shadow(none);
+
+        &:hover {
+            background-color: lighten($color-blue, 45%);
+        }
+
+        &:disabled {
+            background-color   : lighten($color-light-grey, 10%);
+            border-bottom-color: lighten($color-light-grey, 5%);
+            color              : darken($color-light-grey, 5%);
+            @include             text-shadow(none);
+        }
+    }
+
+    &.wide {
+        display: block;
+        width: 100%;
+    }
+
+    @each $btn_class, $btn_bgColor, $btn_bgShadow, $btn_txtColor in $principal-colors {
+        &.#{$btn_class}:not(:disabled) {
+            background-color: #{$btn_bgColor};
+            color           : #{$btn_txtColor};
+
+            &:hover {
+                background-color: lighten($btn_bgColor, 8%);
+            }
+
+            &.softed:not(:disabled) {
+                background-color   : lighten($btn_bgColor, 35%);
+                color              : $btn_bgColor;
+                border-bottom-color: lighten($btn_bgColor, 25%);
+                @include             text-shadow(none);
+
+                &:hover {
+                    background-color   : lighten($btn_bgColor, 30%);
+                    border-bottom-color: lighten($btn_bgColor, 20%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+/* Media Querie mixins
+-------------------------------------------------------------------------- */
+$phone-width      : 640px;
+$tablet-width     : 768px;
+$desktop-width    : 1060px;
+$bigDesktop-width : 1280px;
+$hugeDesktop-width: 1600px;
+
+@mixin phone {
+    @media (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin phoneAndTablet {
+    @media (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) and (max-width: #{$bigDesktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin bigDesktop {
+    @media (min-width: #{$bigDesktop-width}) {
+        @content;
+    }
+}
+
+@mixin hugeDesktop {
+    @media (min-width: #{$hugeDesktop-width}) {
+        @content;
+    }
+}
+
+@mixin print {
+    @media print {
+        @content;
+    }
+}

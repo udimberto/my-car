@@ -1,0 +1,16 @@
+$this: ".title";
+#{$this} {
+	&:after {
+		content: " ";
+		display: block;
+
+		width : 42px;
+		height: 4px;
+
+		background-color: $color-blue;
+	}
+}
+
+.section {
+	padding: 40px 0 30px;
+}

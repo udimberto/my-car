@@ -1,0 +1,25 @@
+@import "https://fonts.googleapis.com/css?family=Rubik:300,500";
+
+* {
+	@include border-box();
+}
+
+body {
+	font-family: "Rubik", "Helvetica Neue", "Ubuntu", "Segoe UI", "Arial", sans-serif;
+	font-size  : 16px;
+	line-height: 1.25;
+	font-weight: 300;
+	padding-top: $navbar-min-height;
+}
+
+content {
+	display: block;
+}
+
+strong {
+	font-weight: 500;
+}
+
+.loading {
+	@include blur();
+}
